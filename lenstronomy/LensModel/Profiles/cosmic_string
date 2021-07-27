@@ -66,9 +66,9 @@ class CosmicString(LensProfileBase):
         # alpha_y changes based on side and theta
         
         if theta < 90:  
-            alpha_y = -1 * side * alpha_reduced(my) * np.sin(psi)
+            alpha_y = -1 * side * alpha_reduced(mu) * np.sin(psi)
         elif theta > 90: 
-            alpha_y = side * alpha_reduced(my) * np.sin(psi)
+            alpha_y = side * alpha_reduced(mu) * np.sin(psi)
         elif theta == 90: 
             alpha_y = 0
             
